@@ -9,9 +9,9 @@ const lastDate = formatDistanceToNow(date, {addSuffix:true, locale: tr});
 return (
   <div className="p-6 bg-white rounded-[5px] leading-6 mt-4 drop-shadow-md">
     <h3 className="text-lg text-[#c8781a]">{taskObj.title}</h3>
-    <div className="text-xs">
+    <div className="text-xs pt-1">
       son teslim:{" "}
-      <span className={`${daysLeft < 3 ? "bg-[#ffd9d4]" : "bg-[#ccc]"}`}>
+      <span className={`inline-block py-[3px] px-2 rounded-sm ${daysLeft < 3 ? "bg-[#ffd9d4]" : "bg-[#ccc]"}`}>
         {lastDate}
       </span>
     </div>
